@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad - Voicy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#f1f5f9;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:2.5rem;
+    background:linear-gradient(90deg,#38bdf8,#a78bfa);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+header p{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+h2{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+
+.button-top{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#38bdf8;
+    border:none;
+    padding:10px 15px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:bold;
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Política de Privacidad</h1>
+    <p>Aplicación Voicy - Fondos de Pantalla</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>1. Información General</h2>
+        <p>
+            Voicy es una aplicación diseñada para descargar y compartir fondos de pantalla.
+            Respetamos tu privacidad y nos comprometemos a proteger tu información personal.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>2. Información que recopilamos</h2>
+        <ul>
+            <li>Correo electrónico (solo si decides crear una cuenta).</li>
+            <li>Nombre de usuario.</li>
+            <li>Imágenes que subas voluntariamente.</li>
+            <li>Datos técnicos del dispositivo (modelo, versión de Android, IP).</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. Uso de la información</h2>
+        <p>Utilizamos la información para:</p>
+        <ul>
+            <li>Permitir el inicio de sesión.</li>
+            <li>Publicar fondos de pantalla.</li>
+            <li>Mejorar el rendimiento y seguridad de la app.</li>
+            <li>Prevenir actividades fraudulentas.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. Descarga sin cuenta</h2>
+        <p>
+            Los usuarios pueden descargar fondos de pantalla sin necesidad de registrarse.
+            No recopilamos datos personales si solo utilizas la app para descargar contenido.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>5. Almacenamiento y seguridad</h2>
+        <p>
+            Implementamos medidas de seguridad para proteger tu información.
+            Los datos se almacenan en servidores seguros y no se venden a terceros.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>6. Permisos de la aplicación</h2>
+        <ul>
+            <li>Acceso a almacenamiento: para guardar fondos descargados.</li>
+            <li>Acceso a internet: para descargar y subir imágenes.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>7. Derechos del usuario</h2>
+        <p>
+            Puedes solicitar la eliminación de tu cuenta y datos enviando un correo a:
+            <strong>soporte@voicyapp.com</strong>
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>8. Cambios en la política</h2>
+        <p>
+            Nos reservamos el derecho de actualizar esta política.
+            Los cambios serán publicados en esta misma página.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Voicy App - Todos los derechos reservados
+</footer>
+
+<button class="button-top" onclick="scrollTopPage()">↑</button>
+
+<script>
+const btn = document.querySelector(".button-top");
+
+window.onscroll = function() {
+    if(document.documentElement.scrollTop > 200){
+        btn.style.display = "block";
+    }else{
+        btn.style.display = "none";
+    }
+}
+
+function scrollTopPage(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+</script>
+
+</body>
+</html>
